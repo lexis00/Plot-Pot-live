@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plot & Pot</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- HEADER SECTION -->
+  <header class="header">
+    <div class="background-image">
+      <div class="header-content">
+        <div class="top-bar">
+          <div class="logo">Plot & Pot</div>
+          <!--<div class="hamburger">&#9776;</div> -->
+        </div>
+
+        <div class="search-container">
+          <input type="text" id="location-input" class="search-bar" placeholder="Enter City or Zip Code" />
+          <button id="location-submit">Search</button>
+        </div>
+        
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN SECTION -->
+  <main class="main-content">
+    <section class="zones-section">
+      <div class="section-header">
+        <h2></h2>
+        <a href="https://planthardiness.ars.usda.gov/" target="_blank" class="see-more">See more →</a>
+      </div>
+      <img src="usda.png" alt="US Hardiness Zones" class="zones-image" width="50">
+    </section>
+
+    <!-- Flashcard placeholder -->
+     <section id="flashcard-section" style="display: none;">
+      <h2 id="flashcard-header" style="text-align: center;">Your Future Sprouts</h2>
+      <div id="flashcard-container"></div>
+    </section>
+
+
+  <div id="nav-buttons" style="text-align:center; margin-top: 50px;">
+    <button id="prev-btn">⬅ Prev</button>
+    <button id="next-btn">Next ➡</button>
+</div>
+
+  </main>
+
+  <!-- Link to JS -->
+  <script src="app.js"></script>
+</body>
+</html>
+
+
