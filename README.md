@@ -1,1 +1,1 @@
-Repository holding only frontend code to host on GitHub pages. If you would like to see the entire project sorce code please go here: https://github.com/lexis00/Plot-Pot
+This repository contains solely the frontend code, intended for hosting via GitHub Pages. For access to the complete project source code, please refer to the provided link: https://github.com/lexis00/Plot-Pot
