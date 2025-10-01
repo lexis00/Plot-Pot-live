@@ -17,8 +17,11 @@
 }
 
 body {
-  background-color: #f5f5f5;
-  color: #333;
+  min-height: 100vh; /* ensures gradient covers full viewport */
+  margin: 0;
+  background: linear-gradient(135deg, #d0f0c0, #a8e6a3); /* light green gradient */
+ /* background-color: #f5f5f5;
+  color: #333; */
 }
 
 /* HEADER STYLES */
@@ -144,7 +147,7 @@ body {
   margin-top: 40px;
   text-align: center;
   /* Gradient background */
-  background: linear-gradient(135deg, #d4f7dc 0%, #a6e5a1 100%);
+  background: transparent /*linear-gradient(135deg, #d4f7dc 0%, #a6e5a1 100%);*/
   padding: 50px 20px; /* add some padding so content doesn't touch edges */
   border-radius: 30px; /* optional rounded edges for section */
   }
