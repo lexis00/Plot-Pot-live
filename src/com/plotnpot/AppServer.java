@@ -26,9 +26,9 @@ public class AppServer {
     public static void main(String[] args) throws Exception { //stable entry and port   
         HttpServer server = HttpServer.create(new InetSocketAddress(PORT), 0);  //Creates server that listens to all IPs on port 
 
-        Map<String, String> apiKeys = loadKeys("keys.env");
-        String openWeatherKey = apiKeys.get("OPENWEATHER_KEY");
-        String perenualKey = apiKeys.get("PERENUAL_KEY");
+       // Read API keys from environment variables
+        String openWeatherKey = System.getenv("OPENWEATHER_KEY");
+        String perenualKey = System.getenv("PERENUAL_KEY");
 
 
         
@@ -218,7 +218,7 @@ public class AppServer {
     return params;
 }
 
-
+/*Function no longer needed due to keys being added on Render
 public static Map<String, String> loadKeys(String filePath) throws IOException {
     Map<String, String> keys = new HashMap<>();
     List<String> lines = Files.readAllLines(Paths.get(filePath));
@@ -231,7 +231,7 @@ public static Map<String, String> loadKeys(String filePath) throws IOException {
         }
     }
     return keys;
-}
+} */
 
 
 }
