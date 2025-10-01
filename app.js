@@ -114,3 +114,12 @@ locationSubmit.addEventListener('click', async () => {
         flashcardContainer.innerHTML = `<p style="color:red; text-align:center;">Error fetching data. Please try again.</p>`;
     }
 });
+
+// BACK TO HOMEPAGE button listener
+document.getElementById("back-home-btn").addEventListener("click", () => {
+    flashcardSection.style.display = "none";      // hide flashcards
+    headerSection.style.display = "block";        // show welcome/header section
+    zonesection.style.display = "block";          // show zones section
+});
+
+
