@@ -227,3 +227,30 @@ body {
   background-color: #45a049; /* slightly darker on hover */
   transform: translateY(-2px); /* subtle lift effect */
 }
+
+/* Back to homepage button */
+#back-home-btn {
+  background-color: #014904; /* match nav buttons */
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  
+  /* Position at bottom-left of heading */
+  position: absolute;
+  left: 20px;
+  top: 60px; /* adjust to be just below the heading */
+}
+
+#back-home-btn:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+
+
