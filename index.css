@@ -228,7 +228,6 @@ body {
   transform: translateY(-2px); /* subtle lift effect */
 }
 
-/* Back to homepage button */
 #back-home-btn {
   background-color: #014904; /* match nav buttons */
   color: white;
@@ -240,11 +239,7 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  
-  /* Position at bottom-left of heading */
-  position: absolute;
-  left: 20px;
-  top: 60px; /* adjust to be just below the heading */
+  margin-top: 10px; /* spacing for wrap on small screens */
 }
 
 #back-home-btn:hover {
@@ -252,5 +247,14 @@ body {
   transform: translateY(-2px);
 }
 
+@media (max-width: 600px) {
+  #flashcard-header {
+    font-size: 3rem;
+  }
+  #back-home-btn {
+    width: 100%;  /* button stretches on small screens */
+    text-align: center;
+  }
+}
 
 
