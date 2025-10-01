@@ -19,9 +19,7 @@
 body {
   min-height: 100vh; /* ensures gradient covers full viewport */
   margin: 0;
-  background: linear-gradient(135deg, #d0f0c0, #a8e6a3); /* light green gradient */
- /* background-color: #f5f5f5;
-  color: #333; */
+  background: color: #333; 
 }
 
 /* HEADER STYLES */
