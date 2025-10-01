@@ -1,5 +1,5 @@
 # Use Java 21 JDK slim image
-FROM openjdk:21.0.3-jdk-slim
+FROM openjdk:21-jdk-slim
 
 # Set working directory in container
 WORKDIR /app
