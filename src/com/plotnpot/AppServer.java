@@ -19,8 +19,9 @@ import org.json.JSONArray;
 
 
 public class AppServer {
-    //setup http server on fixed port to accept request 
-    private static final int PORT = 8080;
+    //setup port to render port or fallback to local port
+    private static final int PORT = Integer.parseInt(System.getenv().getOrDefault("PORT", "8080"));
+
 
     public static void main(String[] args) throws Exception { //stable entry and port   
         HttpServer server = HttpServer.create(new InetSocketAddress(PORT), 0);  //Creates server that listens to all IPs on port 
