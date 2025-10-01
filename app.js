@@ -24,7 +24,9 @@ locationSubmit.addEventListener('click', async () => {
         flashcardSection.style.display = "block";
 
         // 1. Fetch location/weather data
-        const locationResponse = await fetch(`http://localhost:8080/location?input=${encodeURIComponent(userInput)}`);
+        const BASE_URL = "https://plot-pot-live.onrender.com"
+        
+        const locationResponse = await fetch(`${BASE_URL}/location?input=${encodeURIComponent(userInput)}`);   
         if (!locationResponse.ok) throw new Error(`HTTP error! Status: ${locationResponse.status}`);
         const locationData = await locationResponse.json();
         console.log("Location response:", locationData);
@@ -32,7 +34,7 @@ locationSubmit.addEventListener('click', async () => {
         const tempF = locationData["temperature in fahrenheit"] || 70; // fallback if missing
 
         // 2. Fetch plant data
-        const plantResponse = await fetch(`http://localhost:8080/plants?location=${encodeURIComponent(userInput)}`);
+        const plantResponse = await fetch(`${BASE_URL}/plants?location=${encodeURIComponent(userInput)}`);
         if (!plantResponse.ok) throw new Error(`HTTP error! Status: ${plantResponse.status}`);
         const plantData = await plantResponse.json();
         console.log("Plant data:", plantData);
