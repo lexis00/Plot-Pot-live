@@ -143,7 +143,11 @@ body {
 #flashcard-section {
   margin-top: 40px;
   text-align: center;
-}
+  /* Gradient background */
+  background: linear-gradient(135deg, #d4f7dc 0%, #a6e5a1 100%);
+  padding: 50px 20px; /* add some padding so content doesn't touch edges */
+  border-radius: 30px; /* optional rounded edges for section */
+  }
 
 #flashcard-header {
   font-size: 4.5rem;
